@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta lang="en-US">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nunito|Ro|patua" rel="stylesheet">
+<link rel="stylesheet" href="style/animate.css">
+<link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<title>
+school managment
+</title>
+</head>
+<body>
+<div class="box-dark d-flex align-items-center">
+<div class="container px-0 pt-4" id="login_con">
+<div class="row">
+<div class="col-md-3 mb-4 animated slideInUp slower">
+<ul class="list-group">
+<li class="list-group-item bg-warning text-light text-center mb-0">
+<h6 class="mb-0">school management 1.0</h6>
+</li>
+<li class="list-group-item pb-0 px-0 pt-0 li-img">
+<img src="images/child.png" alt="child" width="100%" height="400" class="pb-0">
+</li>
+<li class="list-group-item bg-warning text-light text-center">
+<a class="list-group-link" href="#">contact us</a>
+</li>
+</ul>
+</div>
+<div class="col-md-9 pr-5">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item"><a href="#register" class="nav-link active" data-toggle="tab">register</a></li>
+<li class="nav-item"><a href="#login" class="nav-link" data-toggle="tab">login</a></li>
+
+</ul>
+<div class="tab-content mt-3" style="overflow-x:hidden;">
+<div class="tab-pane active text-dark animated slideInLeft slower" id="register">
+<form autocomplete="off" id="form">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter school name here
+</span>
+</div>
+<input type="text" class="form-control border-warning border-left-0 " name="school name" placeholder="school name" required="required" id="school_name">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter tag line here
+</span>
+</div>
+<input type="text" class="form-control border-warning border-left-0 " name="tag name" placeholder="school tag name" required="required" id="school_tag">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter email id here
+</span>
+</div>
+<input type="email" class="form-control border-warning border-left-0 " name="email" placeholder="email id" required="required" id="email">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter password here
+</span>
+</div>
+<input type="password" class="form-control border-warning border-left-0 " name="password" placeholder="password" required="required" id="password">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter website name here
+</span>
+</div>
+<input type="website" class="form-control border-warning border-left-0 " name="website" placeholder="website name" required="required" id="website">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter mobile no here
+</span>
+</div>
+<input type="number" class="form-control border-warning border-left-0 " name="number" placeholder="mobile no" required="required" id="mobile">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+enter phone no here
+</span>
+</div>
+<input type="number" class="form-control border-warning border-left-0 " name="phone" placeholder="phone no" required="required" id="phone">
+</div>
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-0">
+address
+</span>
+</div>
+<textarea class="form-control border-warning border-left-0 " name="school name" placeholder="address here" required="required" id="address"></textarea>
+</div>
+<div class="alert icon-box float-left w-75 d-none">
+<i class="fa fa-close close icon" data-dismiss="alert"></i>
+</div>
+<button type="submit" class="float-right btn btn-warning text-light">register</button>
+</form>
+</div>
+<div class="tab-pane animated slideInLeft slower" id="login">
+<form autocomplete="off" id="login_form">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+enter username
+</span>
+</div>
+<input type="email" name="email" class="form-control" placeholder="username" id="login_email">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+enter password
+</span>
+</div>
+<input type="password" name="password" class="form-control" placeholder="password" id="login_password">
+</div>
+<div class="alert w-75 float-left d-none" id="login_alert">
+<i class="fa fa-close close" data-dismiss="alert" style="color:red;"></i>
+</div>
+<button class="btn btn-warning text-light float-right mt-2 px-4 py-2">Login</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--modal coding-->
+<div class="modal animated slideInLeft slower mr-0" id="new_modal">
+<div class="modal-dialog">
+<div class="modal-content" id="modal_text">
+<div class="modal-header bg-warning text-light text-center">
+<h6 class="mx-auto m-0">sure you want to delete</h6>
+</div>
+<div class="modal-body text-center">
+<h6 class="m-0 mx-auto">to delete or cancel click button</h6>
+<button class="btn btn-primary text-light" data-dismiss="modal">cancel</button>
+<button class="btn btn-warning text-light delete_database">delete</button>
+</div>
+<div class="modal-footer text-center bg-warning text-light">
+<h6 class="mx-auto m-0">after deleting you can manage new data</h6>
+</div>
+</div>
+</div>
+</div>
+<!--end modal coding-->
+<script src="js/school.js"></script>
+</body>
+</html>
