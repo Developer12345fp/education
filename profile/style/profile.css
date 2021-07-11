@@ -1,0 +1,71 @@
+@charset "utf-8";
+.con{
+	width:100%;
+	height:100vh;
+	background:url(../images/school.jpg);
+	background-size:cover;
+}
+.con_child{
+	width:100%;
+	height:100vh;
+	background:rgba(0,0,0,0.7);
+	overflow-y:scroll;
+}
+.white{
+	background:white;
+}
+.font{
+	font-family:'righteous';
+}
+.form-control:focus{
+	box-shadow:none ! important;
+	border:1px solid #FFC107 ! important;
+}
+.form-control::placeholder{
+	color:rgb(255,116,102);
+}
+.border_color{
+	border:1px solid black;
+}
+.font_family{
+	font-family:'do Hyeon',sans-serif;
+	color:black;
+}
+.logo_box{
+	position:relative;
+	width:200px;
+	height:200px;
+	border:2px solid #ccc;
+	box-sizing:border-box;
+	box-shadow:0px 3px 0px grey;
+}
+.child{
+	width:200px;
+	height:200px;
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.input_logo{
+		width:200px;
+	height:200px;
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+}
+/*start invoice.html coding*/
+.invoice_box{
+	width:60%;
+	
+	box-sizing:border-box;
+	margin-top:7%;
+	
+	box-shadow:0px 3px 0px grey;	
+	
+}
+.invoice_family{
+	font-family:'do Hyeon',sans-serif;
+}

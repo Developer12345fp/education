@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta lang="en-US">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nunito|Ro|patua|righteous" rel="stylesheet">
+<link rel="stylesheet" href="style/animate.css">
+<link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/profile.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>
+profile of school
+</title>
+</head>
+<body>
+<div class="con">
+<div class="con_child">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3 white d-flex justify-content-center mb-3 animated slideInDown slower">
+<div class="mt-3">
+<div class="logo_box text-center mx-auto">
+<div class="child">
+</div>
+<input type="file" name="file" accept="image/*" class="input_logo">
+</div>
+<h3 class="font_family mb-0 mt-2 text-center clg_name"></h3>
+<p class="font_family ml-2 mb-2 clg_tag text-center"></p>
+<center>
+<button class="btn btn-dark text-light mx-auto mb-2">school management system v 1.0</button>
+</center>
+<div class="custom-file mb-2 input_box d-none">
+<input type="file" accept="image/*" class="custom-file-input w-100 director" id="file">
+<label for="file" class="custom-file-label">choose file</label>
+</div>
+<h6 class="mx-auto text-primary font_family mb-2">Director Signature</h6>
+<ul class="list-group list-group-horizontal mb-2 director_box d-none">
+<li class="list-group-item director_sign w-75 border-warning">
+
+</li>
+<li class="list-group-item border-warning text-primary">
+
+<i class="fa fa-trash dir" style="font-size:30px;cursor:pointer"></i>
+
+</li>
+</ul>
+<div class="custom-file mb-2 d-none input-box">
+<input type="file" accept="image/*" class="custom-file-input w-100 principal" id="file-1">
+<label for="file-1" class="custom-file-label">choose file</label>
+</div>
+<h6 class="mx-auto text-primary font_family mb-2">Principall Signature</h6>
+<ul class="list-group list-group-horizontal mb-2 principal_box d-none">
+<li class="list-group-item principal_sign w-75 border-warning">
+
+</li>
+<li class="list-group-item border-warning text-primary">
+
+<i class="fa fa-trash pri" style="font-size:30px;cursor:pointer"></i>
+
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-md-9">
+<div class="row">
+<div class="col-md-6 mt-4 mb-2">
+<div class="white mx-auto pb-2 animated slideInLeft slower mb-3" style="width:95%;position:relative;top:0;right:0;">
+<h4 class="mb-3 font text-center">set fee for classes</h4>
+<img src="images/check_fee.png" id="fee_menu" class="float-right mb-3" width="150" data-toggle="modal" data-target="#child_modal" style="position:absolute;top:0;right:0;">
+<div class="w-100 p-2">
+<input type="number" class="form-control mb-2 class_name" name="classes" placeholder="enter classes:7">
+</div>
+
+<div class="group_box p-2">
+<div class="input-group mb-2">
+<input type="text" name="course" class="form-control course_name" placeholder="course name">
+<input type="number" name="fee" class="form-control course_fee" placeholder="course fee">
+<div class="input-group-append">
+<span class="input-group-text bg-warning text-light border-warning">
+monthly
+</span>
+</div>
+</div>
+</div>
+<div class="btn-group text-center">
+<button class="btn bg-primary text-light set_field_btn m-2 px-4">set field</button>
+<button class="btn bg-warning text-light add_field_btn m-2"><i class="fa fa-plus-circle mr-2"></i>add field</button>
+</div>
+</div>
+<div class="white p-2 mx-auto animated slideInRight slower" style="width:95%;">
+<h6 class="text-center font_family mb-2">find student</h6>
+<form class="find_form">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light">
+DOB
+</span>
+</div>
+<input type="date" name="date" id="find_date" class="form-control">
+</div>
+
+<div align="right">
+<button class="find_btn btn bg-warning text-light border-warning px-3">Find now</button>
+</div>
+</form>
+</div>
+<div class="white p-2 mx-auto animated slideInRight slower mt-3" style="width:95%;">
+<h6 class="text-center font_family mb-2">Get Invoice</h6>
+<form class="find_form">
+<input type="number" name="number" class="form-control invoice_no mb-2" placeholder="Enter admission no">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light">
+Invoice Date
+</span>
+</div>
+<input type="date" name="date" id="invoice_date" class="form-control" required="required">
+</div>
+
+<div align="right">
+<button type="submit" class="invoice_btn btn bg-primary text-light border-warning px-3">get invoice now</button>
+</div>
+</form>
+</div>
+</div>
+<div class="col-md-6 pt-3">
+<div class="font mx-auto white pb-2 animated slideInDown slower" style="position:relative;width:95%;">
+<h4 class="text-center mb-2 mt-2 font">Take Admission</h4>
+<button class="btn-warning btn text-light account" style="position:absolute;top:0;right:0;"></button>
+<img src="images/take_adm.png" width="150" class="mb-3" style="position:absolute;top:0;left:0;">
+<form class="adm-form" autocomplete="off">
+<div class="media mb-2">
+<div class="border m-1 pic_box">
+<img src="images/upload_pic.png" class="w-100 upload_pic" title="upload pic" style="cursor:pointer;">
+</div>
+<div class="media-content">
+
+<div class="input-group px-2 mt-2 mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+FirstName
+</span>
+</div>
+<input type="text" class="form-control f-name" name="username" placeholder="first name" required="required">
+</div>
+<div class="input-group px-2 mt-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+LastName
+</span>
+</div>
+<input type="text" class="form-control l-name" name="lastname" placeholder="last name" required="required">
+</div>
+</div>
+</div>
+<div class="input-group px-2 mt-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+MotherName
+</span>
+</div>
+<input type="text" class="form-control mother-name" name="mother name" placeholder="mother name" required="required">
+</div>
+<div class="input-group px-2 mt-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+FatherName
+</span>
+</div>
+<input type="text" class="form-control father-name" name="father name" placeholder="father name" required="required">
+</div>
+<div class="input-group px-2 mt-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+Mobile
+</span>
+</div>
+<input type="number" class="form-control f-m-no" name="number" placeholder="first number" required="required">
+<input type="number" class="form-control s-m-no" name="number" placeholder="second number" required="required">
+</div>
+<div class="input-group px-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+DOB
+</span>
+</div>
+<input type="date" class="date form-control" name="date" required="required">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+Gender
+</span>
+</div>
+<select class="form-control gender" required="required">
+<option>male</option>
+<option>female</option>
+</select>
+</div>
+<div class="input-group px-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+Choose Class
+</span>
+</div>
+<select class="cls form-control custom-control">
+<option>choose class</option>
+</select>
+</div>
+<div class="input-group px-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+Admitted In
+</span>
+</div>
+<select class="hostel form-control custom-control" required="required">
+<option>school</option>
+<option>hostel</option>
+</select>
+</div>
+<div class="input-group px-2 mb-2">
+<div class="input-group-prepend">
+<span class="input-group-text bg-warning text-light border-warning">
+Address
+</span>
+</div>
+<textarea class="form-control address" placeholder="Address" required="required"></textarea>
+</div>
+<div class="input-group px-2 mb-2">
+<div class="alert_box float-left" style="width:70%;">
+
+</div>
+<button type="submit" class="btn btn-warning text-light ml-auto mb-2 py-2 btn_form">Register Now</button>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--modal coding-->
+<div class="modal" id="child_modal">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-warning text-light">
+<h5 class="mx-auto">fee details</h5>
+</div>
+<div class="modal-body" id="body_box">
+
+</div>
+<div class="modal-footer bg-warning text-light">
+<h5 class="mx-auto"><a href="#">contact us</a></h5>
+</div>
+</div>
+</div>
+</div>
+<!--end modal coding-->
+<script src="js/profile.js"></script>
+</body>
+</html>
